@@ -1,0 +1,78 @@
+.carousel-item {
+  height: 400px;
+}
+
+@media (max-width: 575.98px) {
+  .carousel-item {
+    height: auto;
+  }
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    height: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-item {
+    height: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-item {
+    height: 900px;
+  }
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media (max-width: 575.98px) {
+  .footer p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) {
+  .footer p {
+    font-size: 16px;
+  }
+}
+
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.navbar-nav .nav-item.active > .nav-link {
+  background-color: #699dd2;
+}
+.navbar {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+}

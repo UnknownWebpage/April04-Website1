@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - David Salon</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the testimonials section */
+        .testimonial {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .testimonial img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-text {
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">David Salon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownProducts">
+                        <a class="dropdown-item" href="services.html">Services</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOthers" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Others
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownOthers">
+                        <a class="dropdown-item" href="blog.html">Blog</a>
+                        <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                        <a class="dropdown-item" href="contact.html">Contact Us</a>
+                        <a class="dropdown-item" href="careers.html">Careers</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        var url = window.location.href;
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        for (var i = 0; i < navLinks.length; i++) {
+            var link = navLinks[i];
+            if (link.href === url) {
+                link.parentNode.classList.add('active');
+            }
+        }
+    </script>
+
+    <div class="container">
+        <h1>Testimonials</h1>
+
+        <div class="testimonial">
+            <img src="face1.jpg" alt="Testimonial 1">
+            <h3 class="testimonial-name">Emily Johnson</h3>
+            <p class="testimonial-text">"I have been going to David Hair Salon for over a year now, and I can
+                confidently say that it's the best salon in town!
+                The staff is incredibly talented and friendly. David himself always takes the time to understand exactly
+                what I want and
+                delivers stunning results every time. The salon has a warm and welcoming atmosphere, and I always leave
+                feeling pampered
+                and beautiful. I highly recommend David Hair Salon to anyone looking for top-notch hair services!"</p>
+        </div>
+
+        <div class="testimonial">
+            <img src="face2.jpg" alt="Testimonial 2">
+            <h3 class="testimonial-name">John Anderson</h3>
+            <p class="testimonial-text">"I have been going to David Hair Salon for over a year now, and I can
+                confidently say that it's the best salon in town!
+                The staff is incredibly talented and friendly. David himself always takes the time to understand exactly
+                what I want and
+                delivers stunning results every time. The salon has a warm and welcoming atmosphere, and I always leave
+                feeling pampered
+                and beautiful. I highly recommend David Hair Salon to anyone looking for top-notch hair services!"</p>
+        </div>
+
+        <div class="testimonial">
+            <img src="face3.jpg" alt="Testimonial 3">
+            <h3 class="testimonial-name">Michael Johnson</h3>
+            <p class="testimonial-text">"As a guy who takes pride in his appearance, finding a good salon for men can be
+                challenging. Fortunately, I discovered
+                David Hair Salon, and it has been a game-changer for me. The staff at the salon understands men's hair
+                trends and knows
+                exactly how to deliver the perfect haircut and grooming experience. From the moment I step in, I'm
+                greeted with a
+                friendly smile and made to feel comfortable. David's expertise and attention to detail are remarkable,
+                and I always
+                leave the salon feeling confident and stylish. I highly recommend David Hair Salon to all the men out
+                there looking for
+                a top-notch grooming experience!"</p>
+        </div>
+
+    </div>
+    <footer class="footer mt-5">
+        <div class="container">
+            <p>David Salon 2023 - April Joy Castro</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

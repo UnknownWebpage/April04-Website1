@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - David Salon</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        @media (max-width: 575.98px) {
+            .container {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+
+        .blog-post {
+            margin-bottom: 40px;
+        }
+
+        .blog-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .blog-date {
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .blog-content {
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">David Salon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownProducts">
+                        <a class="dropdown-item" href="services.html">Services</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOthers" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Others
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownOthers">
+                        <a class="dropdown-item" href="blog.html">Blog</a>
+                        <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                        <a class="dropdown-item" href="contact.html">Contact Us</a>
+                        <a class="dropdown-item" href="careers.html">Careers</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        var url = window.location.href;
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        for (var i = 0; i < navLinks.length; i++) {
+            var link = navLinks[i];
+            if (link.href === url) {
+                link.parentNode.classList.add('active');
+            }
+        }
+    </script>
+
+    <div class="container">
+        <h1>Our Blog</h1>
+
+        <div class="blog-post">
+            <h2 class="blog-title">Unlock Your Hair's Potential: Discover the Transformational Magic of David Hair Salon
+            </h2>
+            <p class="blog-date">Posted on January 1, 2022</p>
+            <p class="blog-content">Are you tired of lackluster hair? In this blog post, we delve into the incredible
+                transformations that happen at David
+                Hair Salon. From revitalizing dull locks to creating stunning makeovers, David and his team have the
+                magic touch to
+                bring out the best in your hair. Learn about their expertise, personalized approach, and the secrets
+                behind their
+                clients' jaw-dropping before-and-after results.</p>
+        </div>
+
+        <div class="blog-post">
+            <h2 class="blog-title">The Ultimate Guide to Choosing the Perfect Hairstyle: Expert Tips from David Hair
+                Salon</h2>
+            <p class="blog-date">Posted on February 1, 2022</p>
+            <p class="blog-content">Choosing the right hairstyle can be overwhelming, but fear not! In this
+                comprehensive guide, we collaborate with the
+                experts at David Hair Salon to provide you with invaluable tips for finding the perfect hairstyle that
+                suits your face
+                shape, lifestyle, and personality. Discover how to communicate your desired look effectively, understand
+                the latest hair
+                trends, and ensure that your hairstyle truly enhances your natural beauty.</p>
+        </div>
+
+        <div class="blog-post">
+            <h2 class="blog-title">Pampering and Perfection: Unveiling the Luxurious Experience at David Hair Salon</h2>
+            <p class="blog-date">Posted on March 1, 2022</p>
+            <p class="blog-content">Prepare to be pampered! In this blog post, we take you on a virtual journey through
+                the luxurious experience that awaits
+                you at David Hair Salon. From the moment you step inside, you'll be greeted by a warm and inviting
+                atmosphere. Learn
+                about the salon's state-of-the-art facilities, the indulgent hair care products they use, and the
+                personalized attention
+                each client receives. Get ready to unwind, relax, and leave with a head-turning hairstyle that exceeds
+                your
+                expectations.</p>
+        </div>
+
+    </div>
+    <footer class="footer mt-5">
+        <div class="container">
+            <p>David Salon 2023 - April Joy Castro</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
